@@ -1,0 +1,15 @@
+<h1>Listings!</h1>
+  <table>
+    <tr>
+      <th>Title</th>
+      <th>Text</th>
+    </tr>
+    <tr>
+     <% @posts.each do |posts| %>
+  <tr>
+    <td><%= posts.title %></td>
+    <td><%= posts.text %></td>
+  </tr>
+  <% end %>
+    </tr>
+  </table>
